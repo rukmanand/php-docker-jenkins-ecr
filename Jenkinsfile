@@ -10,7 +10,7 @@ node {
       //docker.image('jenkins-one-ecr').push('latest')
     //}
     withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'demo-ecr-credentials', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
-      docker.image('jenkins-one-ecr').push('latest')
+      docker.image('jenkins-one-ecr').push('latestbulidtoecr')
     }
 
   }
