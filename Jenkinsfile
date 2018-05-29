@@ -2,7 +2,7 @@ node {
   stage("SCM Checkout") {
     git 'https://github.com/rukmanand/php-docker-jenkins-ecr.git'
   }
-  stage("Docker Build) {
+  stage("Docker Build") {
     docker.build('jenkins-one-ecr')  
   }
   stage("Docker Push to ECR") {
